@@ -16,6 +16,8 @@ while True:
             while s >= 60:
                 m += 1
                 s -= 60
+            if s < 10:
+                s = '0' + str(s)
             lap_time = str(m) + ":" + str(s)
             return lap_time
 
